@@ -1,16 +1,13 @@
 package edu.pacificu.cs.duckhunter;
 
-import edu.pacificu.cs.duckhunter.util.SystemUiHider;
-
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
+import edu.pacificu.cs.duckhunter.util.SystemUiHider;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -53,8 +50,7 @@ public class DuckHunterMain extends Activity
   {
     super.onCreate (savedInstanceState);
 
-    //setContentView (R.layout.activity_duck_hunter_main);
-    setContentView (R.layout.activity_game);
+    setContentView (R.layout.activity_duck_hunter_main);
 
     final View contentView = findViewById (R.id.fullscreen_content);
     final Button btnNewGame = (Button) findViewById (R.id.btnNewGame);
@@ -194,6 +190,7 @@ public class DuckHunterMain extends Activity
   
   private void startGame ()
   {
-    
+    Intent startGameIntent = new Intent (getApplicationContext (), GameActivity.class);
+    startActivity (startGameIntent);
   }
 }
