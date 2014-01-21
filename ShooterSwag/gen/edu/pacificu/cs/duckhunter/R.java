@@ -8,6 +8,9 @@
 package edu.pacificu.cs.duckhunter;
 
 public final class R {
+    public static final class array {
+        public static final int gameDifficulty=0x7f070000;
+    }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -19,23 +22,79 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int buttonBarStyle=0x7f010000;
     }
     public static final class color {
-        public static final int black_overlay=0x7f040000;
+        public static final int Lime=0x7f050012;
+        public static final int Steel_Blue=0x7f050011;
+        public static final int aqua=0x7f05000c;
+        public static final int black=0x7f05000e;
+        public static final int blue=0x7f05000b;
+        public static final int crimson=0x7f050013;
+        public static final int fuchsia=0x7f050006;
+        public static final int gray=0x7f050010;
+        public static final int green=0x7f050009;
+        public static final int lime=0x7f050008;
+        public static final int maroon=0x7f050000;
+        public static final int navy=0x7f05000a;
+        public static final int olive=0x7f050004;
+        public static final int orange=0x7f050002;
+        public static final int purple=0x7f050005;
+        public static final int red=0x7f050001;
+        public static final int silver=0x7f05000f;
+        public static final int teal=0x7f05000d;
+        public static final int white=0x7f050007;
+        public static final int yellow=0x7f050003;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int aiming=0x7f020000;
+        public static final int ball_blue=0x7f020001;
+        public static final int ball_green=0x7f020002;
+        public static final int ball_yellow=0x7f020003;
+        public static final int birds=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int icon=0x7f020006;
+        public static final int joystick=0x7f020007;
+        public static final int joystick_bg=0x7f020008;
+        public static final int paddle=0x7f020009;
     }
     public static final class id {
-        public static final int dummy_button=0x7f070002;
-        public static final int fullscreen_content=0x7f070000;
-        public static final int fullscreen_content_controls=0x7f070001;
+        public static final int dummy_button=0x7f090002;
+        public static final int fullscreen_content=0x7f090000;
+        public static final int fullscreen_content_controls=0x7f090001;
     }
     public static final class layout {
         public static final int activity_duck_hunter_main=0x7f030000;
     }
+    public static final class raw {
+        public static final int gunshot=0x7f040000;
+        public static final int gunshot2=0x7f040001;
+    }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int dummy_button=0x7f050001;
-        public static final int dummy_content=0x7f050002;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int btnHighScore=0x7f06001a;
+        public static final int easy=0x7f060014;
+        public static final int hard=0x7f060016;
+        public static final int hello_world=0x7f060002;
+        public static final int iconInfo=0x7f06000f;
+        public static final int medium=0x7f060015;
+        public static final int minesweeperRulesLineOne=0x7f06000e;
+        public static final int minesweeperRulesLineThree=0x7f060011;
+        public static final int minesweeperRulesLineTwo=0x7f060010;
+        public static final int minesweeperRulesSimple=0x7f06000d;
+        public static final int rulelocation=0x7f060017;
+        public static final int runMinesweeper=0x7f060019;
+        public static final int sAbout=0x7f060006;
+        public static final int sContinue=0x7f060004;
+        public static final int sExit=0x7f060007;
+        public static final int sGameDifficulty=0x7f060008;
+        public static final int sNewGame=0x7f060003;
+        public static final int sRules=0x7f060005;
+        public static final int theBoard=0x7f060012;
+        public static final int theRules=0x7f060018;
+        public static final int threeModes=0x7f060013;
+        public static final int txtDeveloper=0x7f060009;
+        public static final int txtEmailContact=0x7f06000b;
+        public static final int txtPacificUniversity=0x7f06000a;
+        public static final int txtVersion=0x7f06000c;
     }
     public static final class style {
         /** 
@@ -62,15 +121,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int ButtonBar=0x7f060003;
-        public static final int ButtonBarButton=0x7f060004;
-        public static final int FullscreenActionBarStyle=0x7f060005;
-        public static final int FullscreenTheme=0x7f060002;
+        public static final int AppTheme=0x7f080001;
+        public static final int ButtonBar=0x7f080003;
+        public static final int ButtonBarButton=0x7f080004;
+        public static final int FullscreenActionBarStyle=0x7f080005;
+        public static final int FullscreenTheme=0x7f080002;
     }
     public static final class styleable {
         /** 
@@ -100,7 +159,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.pacificu.cs.duckhunter:buttonBarButtonStyle
+          @attr name android:buttonBarButtonStyle
         */
         public static final int ButtonBarContainerTheme_buttonBarButtonStyle = 1;
         /**
@@ -110,7 +169,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name edu.pacificu.cs.duckhunter:buttonBarStyle
+          @attr name android:buttonBarStyle
         */
         public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
     };
