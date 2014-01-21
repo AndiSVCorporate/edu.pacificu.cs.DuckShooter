@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -40,7 +41,7 @@ public class DuckHunterMain extends Activity
   /**
    * The flags to pass to {@link SystemUiHider#getInstance}.
    */
-  private static final int HIDER_FLAGS = SystemUiHider.FLAG_HIDE_NAVIGATION;
+  private static final int HIDER_FLAGS = SystemUiHider.FLAG_FULLSCREEN;
 
   /**
    * The instance of the {@link SystemUiHider} for this activity.
@@ -56,6 +57,16 @@ public class DuckHunterMain extends Activity
     setContentView (R.layout.activity_game);
 
     final View contentView = findViewById (R.id.fullscreen_content);
+    final Button btnNewGame = (Button) findViewById (R.id.btnNewGame);
+    btnNewGame.setOnClickListener (new View.OnClickListener()
+    {
+      
+      @Override
+      public void onClick (View v)
+      {
+        startGame();       
+      }
+    });
 
     // Set up an instance of SystemUiHider to control the system UI for
     // this activity.
@@ -108,7 +119,7 @@ public class DuckHunterMain extends Activity
         });*/
 
     // Set up the user interaction to manually show or hide the system UI.
-    /*contentView.setOnClickListener (new View.OnClickListener ()
+    contentView.setOnClickListener (new View.OnClickListener ()
     {
       @Override
       public void onClick (View view)
@@ -122,7 +133,7 @@ public class DuckHunterMain extends Activity
           mSystemUiHider.show ();
         }
       }
-    });*/
+    });
 
     // Upon interacting with UI controls, delay any scheduled hide()
     // operations to prevent the jarring behavior of controls going away
@@ -130,6 +141,7 @@ public class DuckHunterMain extends Activity
   /*  findViewById (R.id.btnNewGame).setOnTouchListener (
         mDelayHideTouchListener);*/
   }
+ 
 
   @Override
   protected void onPostCreate (Bundle savedInstanceState)
@@ -178,5 +190,10 @@ public class DuckHunterMain extends Activity
   {
     mHideHandler.removeCallbacks (mHideRunnable);
     mHideHandler.postDelayed (mHideRunnable, delayMillis);
+  }
+  
+  private void startGame ()
+  {
+    
   }
 }
