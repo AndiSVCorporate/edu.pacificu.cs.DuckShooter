@@ -36,7 +36,7 @@ public class DuckHunterMain extends Activity
    * If set, will toggle the system UI visibility upon interaction. Otherwise,
    * will show the system UI visibility upon interaction.
    */
-  private static final boolean TOGGLE_ON_CLICK = false;
+  private static final boolean TOGGLE_ON_CLICK = true;
 
   /**
    * The flags to pass to {@link SystemUiHider#getInstance}.
@@ -118,7 +118,7 @@ public class DuckHunterMain extends Activity
         });*/
 
     // Set up the user interaction to manually show or hide the system UI.
-    /*contentView.setOnClickListener (new View.OnClickListener ()
+    contentView.setOnClickListener (new View.OnClickListener ()
     {
       @Override
       public void onClick (View view)
@@ -132,7 +132,7 @@ public class DuckHunterMain extends Activity
           mSystemUiHider.show ();
         }
       }
-    });*/
+    });
 
     // Upon interacting with UI controls, delay any scheduled hide()
     // operations to prevent the jarring behavior of controls going away
