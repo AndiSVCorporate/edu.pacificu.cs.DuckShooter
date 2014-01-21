@@ -1,47 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="@drawable/background"
     tools:context=".DuckHunterMain" >
-
-    <!--
-         The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc.
-    -->
 
     <TextView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
+<<<<<<< HEAD
         android:keepScreenOn="true"
         android:text="shitty"
+=======
+        android:text="@string/app_name"
+>>>>>>> refs/remotes/origin/beta
         android:textColor="#33b5e5"
         android:textSize="50sp"
         android:textStyle="bold" />
 
-    <!--
-         This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows.
-    -->
-
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true" >
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
 
-        <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
-            style="?buttonBarStyle"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/black"
             android:orientation="horizontal"
             tools:ignore="UselessParent" >
+=======
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/sNewGame" />
+    </RelativeLayout>
+>>>>>>> refs/remotes/origin/beta
 
+<<<<<<< HEAD
             <Button
                 android:id="@+id/dummy_button"
                 style="?buttonBarButtonStyle"
@@ -53,3 +56,6 @@
     </FrameLayout>
 
 </FrameLayout>
+=======
+</RelativeLayout>
+>>>>>>> refs/remotes/origin/beta

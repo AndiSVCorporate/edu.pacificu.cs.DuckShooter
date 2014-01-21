@@ -2,12 +2,11 @@ package edu.pacificu.cs.duckhunter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.view.Display;
 
-public class PigeonBird extends BirdMain
+public class CrowBird extends BirdMain
 {
-  private final int START_HEALTH = 1; 
+  private final int START_HEALTH = 2; 
   protected Bitmap mBitmapImage;
   protected Display mDisplay;
   private int mHitCount;
@@ -20,7 +19,7 @@ public class PigeonBird extends BirdMain
   private int mHeight; 
 
   
-  public PigeonBird (Context context, Display display, int drawable, 
+  public CrowBird (Context context, Display display, int drawable, 
       int topCoord, int leftCoord)
   {
     mCurrentHealth = START_HEALTH;
@@ -63,7 +62,5 @@ public class PigeonBird extends BirdMain
     // TODO Auto-generated method stub
     
   }*/
-
- 
+  
 }
-

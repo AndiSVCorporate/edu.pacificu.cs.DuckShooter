@@ -2,13 +2,29 @@ package edu.pacificu.cs.duckhunter;
 
 public abstract class BirdMain
 {
-  abstract void hitCount ();
+  abstract int getHitCount ();
   
-  abstract void startHealth();
+  //abstract void setHitCount ();
   
-  abstract void flightPattern();
+  abstract int getStartHealth ();
   
-  abstract int birdImage();  
+  //abstract void setStartHealth (); 
   
+  //abstract int getflightPattern ();
+  
+  //abstract void setFlightPattern ();
+
+  void setHitCount (int hitCount)
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  void setStartHealth (int startHealth)
+  {
+    // TODO Auto-generated method stub
+    
+  } 
+   
   
 }

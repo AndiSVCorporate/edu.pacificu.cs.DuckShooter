@@ -13,8 +13,10 @@ import android.view.WindowManager;
 
 public class GamePlayScreen extends View
 {
+  private final int EASY = 0;
+  private final int MEDIUM = 1;
+  private final int HARD = 2;
   FixedSprite mFixedSprite;
-  MovingSprite[] mMovingSprite;
   PigeonBird birdOne;
   PigeonBird birdTwo;
   PigeonBird birdThree;
@@ -28,13 +30,36 @@ public class GamePlayScreen extends View
     super (context);   
     setFocusable (true);
     setFocusableInTouchMode (true); 
-    birdThree = new PigeonBird (context, display, R.drawable.ball_blue,
-        50, 50);
-
-    birdOne = new PigeonBird (context, display,
-        R.drawable.ball_yellow, 75, 50);
-    birdTwo = new PigeonBird (context, display, R.drawable.ball_green,
-        60, 60);
+    if (difficultyLevel == EASY)
+    {
+      birdOne = new PigeonBird (context, display, R.drawable.ball_yellow, 
+          75, 50);
+      birdTwo = new PigeonBird (context, display, R.drawable.ball_green,
+          60, 60);
+      birdThree = new PigeonBird (context, display, R.drawable.ball_blue,
+          50, 50);   
+    }
+    else if (difficultyLevel == MEDIUM)
+    {
+      birdOne = new PigeonBird (context, display, R.drawable.ball_yellow, 
+          75, 50);
+      birdTwo = new PigeonBird (context, display, R.drawable.ball_green,
+          60, 60);
+      birdThree = new PigeonBird (context, display, R.drawable.ball_blue,
+          50, 50);   
+    }
+    else if (difficultyLevel == HARD)
+    {
+      birdOne = new PigeonBird (context, display, R.drawable.ball_yellow, 
+          75, 50);
+      birdTwo = new PigeonBird (context, display, R.drawable.ball_green,
+          60, 60);
+      birdThree = new PigeonBird (context, display, R.drawable.ball_blue,
+          50, 50);   
+    }
+    
+   
+    
     
   }
 
