@@ -29,7 +29,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class drawable {
         public static final int background=0x7f020000;
-        public static final int duckshooter_launcher=0x7f020001;
+        public static final int birds=0x7f020001;
+        public static final int duckshooter_launcher=0x7f020002;
     }
     public static final class id {
         public static final int btnNewGame=0x7f080001;
@@ -43,6 +44,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int dummy_button=0x7f060001;
         public static final int dummy_content=0x7f060002;
         public static final int sNewGame=0x7f060003;
+        public static final int sNewString=0x7f060004;
     }
     public static final class style {
         /** 
