@@ -6,5 +6,8 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="sNewGame">New Game</string>
     <string name="sNewString">NewString</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

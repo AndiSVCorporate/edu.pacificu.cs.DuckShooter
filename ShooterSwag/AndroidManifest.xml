@@ -25,6 +25,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.pacificu.cs.duckhunter.GameActivity"
+            android:label="@string/title_activity_game"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
     </application>
 
 </manifest>

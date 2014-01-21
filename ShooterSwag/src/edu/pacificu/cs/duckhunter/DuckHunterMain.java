@@ -52,7 +52,8 @@ public class DuckHunterMain extends Activity
   {
     super.onCreate (savedInstanceState);
 
-    setContentView (R.layout.activity_duck_hunter_main);
+    //setContentView (R.layout.activity_duck_hunter_main);
+    setContentView (R.layout.activity_game);
 
     final View contentView = findViewById (R.id.fullscreen_content);
 
