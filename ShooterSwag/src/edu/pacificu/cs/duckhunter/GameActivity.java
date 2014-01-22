@@ -22,11 +22,9 @@ package edu.pacificu.cs.duckhunter;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.Display;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -70,6 +68,7 @@ public class GameActivity extends Activity
    
    
    mGamePlay = new GamePlayScreen(this, difficultyLevel, mDisplay); 
+   mGamePlay.setActivity (this);
    mGamePlay.setBackgroundColor (Color.BLACK);
    setContentView (mGamePlay); 
     

@@ -9,6 +9,7 @@
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="#33b5e5"
@@ -30,6 +31,14 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:text="@string/sNewGame" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/sSettings" />
     </RelativeLayout>
 
 </RelativeLayout>

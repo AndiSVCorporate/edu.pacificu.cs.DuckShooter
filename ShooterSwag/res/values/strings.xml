@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Shooter Swag</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="app_name">Bird Hunter</string>
     <string name="sNewGame">New Game</string>
-    <string name="sNewString">NewString</string>
-    <string name="title_activity_game">GameActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="sBirdHunter">Bird Hunter</string>
+    <string name="sSettings">Settings</string>
     <string name="difficulty">Chose Difficulty</string>
-    
+
     <string-array name="gameDifficulty">
-        <item >Easy</item>
-       	<item >Medium</item>
-       	<item >Hard</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
     </string-array>
+    <string-array name="entryControls">
+        <item>D-Pad &amp; Select Keys</item>
+        <item>WASD &amp; Space</item>
+        <item>Both</item>
+    </string-array>
+
+    <string name="sSettingSound">Sound</string>
+    <string name="sHighscores">Highscores</string>
+    <string name="sSettingRules">Rules</string>
+    <string name="sSettingAbout">About</string>
+    <string name="sDevs">The Developers</string>
+
+    <string-array name="entryValControls">
+        <item>dpad</item>
+        <item>keyboard</item>
+        <item>both</item>
+    </string-array>
+
+    <string name="sControls">Controls</string>
+    <string name="sDevTroy">Troy Zuroske</string>
+    <string name="sDevBrandon">Brandon Schlack</string>
+    <string name="sDevRyan">Ryan Newman</string>
+    <string name="sAboutPacific">Pacific University</string>
+    <string name="sVersion">Version 0.1</string>
 
 </resources>

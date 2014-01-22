@@ -6,12 +6,12 @@
     tools:context=".GameActivity" >
     
      <TextView
-        android:id="@+id/countdown"
+        android:id="@+id/gameScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Timer: "
+        android:text="Game Score: "
         android:textSize="20dp"
         android:textColor="#FFFF00" 
         android:textStyle="bold"

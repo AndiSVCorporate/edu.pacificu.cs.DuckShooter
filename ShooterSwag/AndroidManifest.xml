@@ -11,8 +11,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/duckshooter_launcher"
-        android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar" >
+        android:label="@string/app_name" >
         <activity
             android:name="edu.pacificu.cs.duckhunter.DuckHunterMain"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -27,9 +26,13 @@
         </activity>
         <activity
             android:name="edu.pacificu.cs.duckhunter.GameActivity"
-            android:label="@string/title_activity_game"
+            android:label="@string/sBirdHunter"
             android:screenOrientation="sensorLandscape"
             android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="edu.pacificu.cs.duckhunter.SettingsActivity"
+            android:label="@string/sSettings" >
         </activity>
     </application>
 
