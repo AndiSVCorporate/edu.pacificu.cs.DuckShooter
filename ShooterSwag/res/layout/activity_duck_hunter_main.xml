@@ -10,12 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-<<<<<<< HEAD
-        android:keepScreenOn="true"
-        android:text="shitty"
-=======
         android:text="@string/app_name"
->>>>>>> refs/remotes/origin/beta
         android:textColor="#33b5e5"
         android:textSize="50sp"
         android:textStyle="bold" />
@@ -32,30 +27,9 @@
             android:id="@+id/btnNewGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent" >
-=======
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:text="@string/sNewGame" />
     </RelativeLayout>
->>>>>>> refs/remotes/origin/beta
 
-<<<<<<< HEAD
-            <Button
-                android:id="@+id/dummy_button"
-                style="?buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="shit" />
-        </LinearLayout>
-    </FrameLayout>
-
-</FrameLayout>
-=======
 </RelativeLayout>
->>>>>>> refs/remotes/origin/beta
