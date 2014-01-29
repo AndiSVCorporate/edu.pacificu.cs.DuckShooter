@@ -116,6 +116,7 @@ public class GamePlayScreen extends LinearLayout
         public void onFinish() 
         {
           new AlertDialog.Builder(context)
+          
           .setTitle(GAME_END)
           .setMessage("Time is up! Your final score was: " + gameScore)
           .setPositiveButton(VIEW_BOARD, new DialogInterface.OnClickListener() 
